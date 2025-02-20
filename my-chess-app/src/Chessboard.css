@@ -1,0 +1,45 @@
+/* Chessboard.css */
+.chessboard {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    position: relative; /* For absolute positioning of pieces during animation */
+  }
+  
+  .board-row {
+    display: flex;
+    flex: 1;
+  }
+  
+  .square {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative; /* For piece positioning */
+  }
+  
+  .light {
+    background-color: #f0d9b5; /* Light square color */
+  }
+  
+  .dark {
+    background-color: #b58863; /* Dark square color */
+  }
+  
+  .highlight {
+    background-color: yellow; /* Highlight color */
+    opacity: 0.7;
+  }
+  
+.piece {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
